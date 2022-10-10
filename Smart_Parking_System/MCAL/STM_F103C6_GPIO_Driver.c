@@ -83,6 +83,7 @@ void MCAL_GPIO_init(GPIO_Typedef* GPIOx,GPIO_Pinconfig_t *PinCofing)
 
 	volatile uint32_t * configregister = NULL ;
 	uint8_t PIN_config = 0;
+	//checking if the GPIO_pin number is less than 8 or not to return the equvilent address
 	configregister = (PinCofing->GPIO_Pin_Number <GPIO_PIN_8 ? &GPIOx->CRL :  &GPIOx->CRH);
 	//clear CNF8[1:0] MODE8[1:0]
 	(*configregister) &=~(0xf<<Get_CRLH_Position(PinCofing->GPIO_Pin_Number));

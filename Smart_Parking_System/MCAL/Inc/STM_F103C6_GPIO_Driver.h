@@ -23,6 +23,8 @@ typedef struct
 //Macros Configuration
 //================================
 //@ref GPIO PIN numbers
+// 0001 ---> CNF0 , MODE0
+// 8000 ---> CNF15, MODE15
 #define GPIO_PIN_0			((uint16_t)0x0001)
 #define GPIO_PIN_1			((uint16_t)0x0002)
 #define GPIO_PIN_2			((uint16_t)0x0004)
