@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Smart_Parking_System/MCAL/inc&apos; to &apos;Inc&apos;" description="Rename resource &apos;inc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MCAL/inc" name="Inc" stamp="1665397359158" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Smart_Parking_System/HAL/LCD&apos; to &apos;LCD.c&apos;" description="Rename resource &apos;LCD&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HAL/LCD" name="LCD.c" stamp="1665398254175" updateReferences="true"/>
+</session>
