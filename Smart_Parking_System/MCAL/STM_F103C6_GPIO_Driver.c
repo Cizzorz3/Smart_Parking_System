@@ -91,6 +91,9 @@ void MCAL_GPIO_init(GPIO_Typedef* GPIOx,GPIO_Pinconfig_t *PinCofing)
 	//if the pin is output
 	if(PinCofing->GPIO_Pin_Mode == GPIO_AF_output_Open_drain_Mode ||PinCofing->GPIO_Pin_Mode == GPIO_AF_output_Push_pull_Mode || PinCofing->GPIO_Pin_Mode == GPIO_output_Open_drain_Mode || PinCofing->GPIO_Pin_Mode == GPIO_AF_output_Push_pull_Mode)
 	{
+		//E.g GPIO_AF_output_Push_pull_Mode = 1 0
+		// 0x00000006 - 4 = 2
+		// 2<<2 = 8 = 1 0 0 0
 		PIN_config = ((PinCofing->GPIO_Pin_Mode - 4)<<2) | (((PinCofing->GPIO_Pin_Speed))&0x0f);
 
 	}
