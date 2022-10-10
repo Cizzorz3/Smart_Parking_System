@@ -11,8 +11,6 @@
 
 UART_config* Global_UART_Config=NULL;
 
-
-
 /**================================================================
  * @Fn				- MCAL_UART_Init
  * @brief 			- Initializes the UART  peripheral according to the PinConfig
@@ -284,8 +282,6 @@ void MCAL_UART_Recieve_Data(USART_typedef * Usartx , uint16_t * prxbuffer , enum
 	}
 
 }
-
-
 //Interrupt handlers for the UART peripheral
 void USART1_IRQHandler (void)
 {
